@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div id="header">
+     <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+</div>
+<div class="cont-back-img">
+    <div class="container">
+        <div class="header-text">
+            <p>Space Designer</p>
+            <h1>Hi, I'm <span>Himanshu</span> Pandey</h1>
+        </div>
+    </div>
+</div>
+
+
+<div id="about">
+    <div class="container" style="padding-top: 80px;">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title-col">About Me</h1>
+                <p class="test">Being a part of spatial design, I am always oriented towards hands-on experience which lies between, 
+                    Public space design, construction process, furniture design, and conceptual design, which leads to devolop 
+                    my focus towards context based deisgn, and that is why I am considered myself as a contextual designer.</p>
+
+                    <div class="tab-titles">
+                        <p class= "tab-links active-link" onclick="opentab('software skills')">Software Skills</p>
+                        <p class= "tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class= "tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="software skills">
+                        <ul>
+                            <li class="test1"><span>2D-Drawing</span><br>Autodesk-Autocad</li>
+                            <li class="test1"><span>3D-Modeling</span><br>Sketchup</li>
+                            <li class="test1"><span>3D-Rendering</span><br>Lumion, V-ray, Twinmotion</li>
+                            <li class="test1"><span>Adobe-Software</span><br>Illustrator, Indesign, Premiere Pro</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li class="test1"><span>May 2021 - July 2021</span><br>Interior Design-Intern at Florence Design Studio, Ghaziabad</li>
+                            <li class="test1"><span>March 2021 - May 2021</span><br>Interior Design-Intern at divyakash atelier, Noida </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li class="test1"><span>Bachelor's in Design 2018-2022</span><br>The Design Village, Noida</li>
+                            <li class="test1"><span>Higher Senior Secondary School 2017</span><br>Saraswati Vidya Mandir, Deoria</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="about-col-1">
+                <h1>Work</h1>
+            </div>
+        </div> -->
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/5.png">
+                <div class="layer">
+                    <h3>Emovere<br>(It reveals, evolves, experiences itself through us and with us)</h3>
+                    <p class="test2">The opportunity here is to work with a studio that feeds into a research 
+                        project as a referred studio or visual paper. The call looks at interior spaces 
+                        post pandemic. The nature of the proposal for the future and projection 
+                        based but the learners who sign up contribute to the paper as well.</p>
+                        <a href="#"><img class="img-link1" src="images/link-solid.svg"></img></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/6.png">
+                <div class="layer">
+                    <h3>Elements of Museum</h3>
+                    <p class="test2">To design a 40000 Sq feet Museum with proper concept which 
+                        should complete that design and also to make a 3d digital model of 
+                        the Museum.</p>
+                        <a href="#"><img class="img-link1" src="images/link-solid.svg"></img></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/7.png">
+                <div class="layer">
+                    <h3>Miniature Set</h3>
+                    <p class="test2">To craete a mini set, inspired by our dailylife events or dreams or any scene
+                        or any Particular Place using Handmade crafts and that will helps to 
+                        understand about lighting effect, scale and proportion, dimensions.</p>
+                        <a href="#"><img class="img-link1" src="images/link-solid.svg"></img></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/10.png">
+                <div class="layer">
+                    <h3>Serve & Return</h3>
+                    <p class="test2">Re-Imagining the spatial dynamics and functioning of Anganwadi centres.</p>
+                    <a href="#"><img class="img-link1" src="images/link-solid.svg"></img></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/8.png">
+                <div class="layer">
+                    <h3>Ottoman Sunk</h3>
+                    <p class="test2">The goal was to make furniture out of flex plywood, and majorly focused on comfort sitting with a basic style.</p>
+                    <a href="#"><img class="img-link1" src="images/link-solid.svg"></img></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/9.png">
+                <div class="layer">
+                    <h3>The Bend Lounge Chair</h3>
+                    <p class="test2">I designed a lounge chair to bring comfort to the user and 
+                        My objective as a space designer is to build something that prioritises utility over aesthetics.</p>
+                        <a href="#"><img class="img-link1" src="images/link-solid.svg"></img></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/11.png">
+                <div class="layer">
+                    <h3>Karoshambhav</h3>
+                    <p class="test2">To raise public awareness about e-waste.</p>
+                    <a href="#"><img class="img-link1" src="images/link-solid.svg"></img></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class-name="sub-title">Contact Me</h1>
+                <div> <a href="mailto:pandeyh061@gmail.com"><img class="img-link" src="images/gmaill.png"></img>pandeyh061@gmail.com</a></div>
+                <p> <a href="#"><img class="img-link" src="images/gmaill.png"></img></a><b>pandeyh061@gmail.com</b></p>
+                <p><a href="#"><img class="img-link" src="images/call.png"></img></a><b>9918743130, 9667935969</b></p>
+                <div class="social-icons"></div>
+                <a href="https://linkedin.com/"><img class="img-link" src="images/linkedin.png"></img></a>
+                <a href="#"><img class="img-link" src="images/insta.png"></img></a>
+                <a href="#"><img class="img-link" src="images/fb.png"></img></a>
+                <a href="#"><img class="img-link" src="images/twitter.png"></img></a>
+                <p><a href="images/my cv.pdf" download class="btn btn2">Download CV</a></p>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name required">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab"); 
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
