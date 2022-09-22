@@ -4,10 +4,16 @@
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
     font-size: 18px;
+    margin-right: 0px;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     /*background: #080808;*/
-    background: #b2a2a2;
+    background: #FAF9F6;
     color: #fff;
 }
 #header{
@@ -23,7 +29,7 @@ body{
     font-size: 10px;
 }
 .cont-back-img{
-    background-image: url(images/geometry\ 3_Mesa\ de\ trabajo\ 1\ copia\ 2.png);
+    background-image: url(images/geo.2.png);
     background-size: cover;
     background-position: bottom;
     height: 100%;
@@ -31,15 +37,26 @@ body{
     padding-top: 452px;
 }
 
+.cont-back-img h1{
+    color: #000;
+
+}
+
+.cont-back-img p{
+    color: #000;
+    font-weight: 600;
+}
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-left: 34px;
 }
 
 .logo{
     width: 250px;
+
 }
 
 nav ul li{
@@ -50,7 +67,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 18px; 
 }
@@ -73,14 +90,18 @@ nav ul li a:hover::after{
     padding-left: 0%;
     font-size: 30px;
 }
-.header-text h1{
+.header-text h{
     font-size: 60px;
     margin-top: 20px;
+    color: #000;
+    font-weight: 1000;
 
 }
-.header-text h1 span{
+.header-text h span{
     color: #ff004f;
     font-size: 48px;
+    font-weight: 1000;
+
     
 }
 #about{
@@ -115,7 +136,7 @@ nav ul li a:hover::after{
     margin-top: 0%;
     font-size: 30px;
     font-weight: 600;
-    color: #fff;
+    color: black;
 }
 .sub-title p{
     font-size: 40px;
@@ -125,7 +146,7 @@ nav ul li a:hover::after{
     margin-top: 0%;
     font-size: 30px;
     font-weight: 600;
-    color: #fff;
+    color: #000;
 }
 .tab-titles{
     display: flex;
@@ -172,6 +193,7 @@ nav ul li a:hover::after{
     font-weight: 600;
     margin-bottom: 22px;
     margin-top: -20px;
+    color: #000;
 }
 
 .test1{
@@ -222,16 +244,14 @@ nav ul li a:hover::after{
     margin-top: 20px;
     text-decoration: none;
     line-height: 60px;
-    background: #fff;
     border-radius: 50%;
-    margin-left: 100px;
+    margin-left: 91px;
    
 
 }
 
 .img-link{
     max-width: 8%;
-    color: #ff004f;
     margin-top: 20px;
     text-decoration: none;
     line-height: 60px;
@@ -242,9 +262,32 @@ nav ul li a:hover::after{
 
 }
 
+.img-link2{
+    max-width: 8%;
+    margin-top: 20px;
+    text-decoration: none;
+    line-height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: 15px;
+
+}
+
+h4{
+    padding-left: 64px;
+    margin-top: -40px;
+    color: #000;
+}
+
+h5{
+    padding-left: 64px;
+    margin-top: -56px;
+    color: #000;
+}
+
 .layer{
     width: 100%;
-    height: 30%;
+    height: 0%;
     background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
     border-radius: 10px;
     position: absolute;
@@ -276,6 +319,7 @@ nav ul li a:hover::after{
 
 .work:hover img{
     transform: scale(1.1)
+    
 
 }
 
@@ -291,7 +335,7 @@ nav ul li a:hover::after{
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: #000;
     transition: background 0.5s;
     font-weight: 600;
 }
@@ -307,10 +351,13 @@ nav ul li a:hover::after{
 
 .contact-left h1{
     font-size: 48px;
+    color: #000;
 }
 
 .contact-right{
     flex-basis: 60%;
+    width: 100%;
+    margin-top: 25px;
 
 }
 
@@ -329,16 +376,12 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 
-.contact-right{
-    width: 100%;
-
-}
 
 form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #e5e5e5;
     padding: 15px;
     margin: 15px 0;
     color: #fff;
@@ -361,7 +404,7 @@ form .btn2{
         width: 100%;
     }
     .header-text{
-        width: 205px;        
+        width: 50%;        
     }
     .header-text h1{
         font-size: 16px;
@@ -370,18 +413,73 @@ form .btn2{
         color: #ff004f;
         font-size: 16px;
     }
+    .header-text h{
+        font-size: 32px;
+    }
+    .header-text h span {
+        color: #ff004f;
+        font-size: 32px;
+        font-weight: 1000;
+    }
+    .header-text p {
+       font-size: 14px;
+    }
     .cont-back-img{
-        background-image: url(images/geometry\ 3_Mesa\ de\ trabajo\ 1\ copia\ 2.png);
-        padding-bottom: 25%;
+        background-image: url(images/geo.2.png);
+        padding-bottom: 0%;
         padding-top: 40%;
-        background-size: cover;
-        background-position: bottom;
+        background-size: contain;
+        background-position: center;
         /* padding-right: 45%; */
         background-repeat: no-repeat;
     }
     nav ul li {
         margin: 0px 6px;
     }
+
+    .test {
+        margin-bottom: 63px;
+    }
+    .container {
+        padding: 5px 5%;
+        font-size: 10px;
+        max-width: 100%;
+    }
+    #about{
+        max-width: 100%;
+    }
+    .row{
+        max-width: 100%;
+    }
+    .tab-titles{
+        max-width: 100%;
+    }
+    .tab-titles p{
+        max-width: 100%;
+    }
+    .about-col-2 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .about-col-1 img {
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+    }
+    #portfolio {
+        padding: 0;
+    }
+    .work-list {
+        margin-top: 20px;
+    }
+
+    nav {
+        margin-left: 12px;
+    }
+}
+.gmailImg{
+    background-image: url(images/gmaill.png);
+   
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px){
@@ -399,7 +497,7 @@ form .btn2{
         font-size: 16px;
     }
     .cont-back-img{
-        background-image: url(images/geometry\ 3_Mesa\ de\ trabajo\ 1\ copia\ 2.png);
+        background-image: url(images/phone-02_Mesa\ de\ trabajo\ 1\ copia\ 2.png);
         padding-bottom: 39%;
         padding-top: 4%;
         background-size: cover;
@@ -410,4 +508,10 @@ form .btn2{
     nav ul li {
         margin: 0px 6px;
     }
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
