@@ -172,12 +172,11 @@
                 <p><a href="images/my cv.pdf" download class="btn btn2">Download CV</a></p>
             </div>
             <div class="contact-right">
-                <span id="msg"></span>
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name required">
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                    <button id="submit-btn" type="submit" class="btn btn2">Submit</button>
                 </form>
                 
             </div>
@@ -206,15 +205,18 @@
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwYwRipJrVgD-npqzAjsSgSNymwsYTUXUrMGC4Nmt9WiSlUDPeW-Zi3FOp2l83vl5Z35g/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
-  
+    console.log("before event");
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
-            msg.innerHTML = "Message Sent successfully"
+            //msg.innerHTML = "Message Sent successfully"
+            alert("Message sent successfully.")
+            //msg.innerHTML = ""
             setTimeout(function(){
-                alert("Message sent successfully.")
-            },1000)
+                //msg.innerHTML = ""
+                
+            },5000)
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
