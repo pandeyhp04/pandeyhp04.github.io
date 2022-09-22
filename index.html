@@ -213,7 +213,8 @@
         .then(response => {
             msg.innerHTML = "Message Sent successfully"
             setTimeout(function(){
-                msg.innerHTML = ""
+                // msg.innerHTML = ""
+                alert("Message sent successfully.")
             },5000)
             form.reset()
         })
